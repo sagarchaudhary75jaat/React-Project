@@ -1,10 +1,12 @@
-function ToDoItem2() {
+function ToDoItem({todoname,tododate}) {
+ 
+
   return (
     <div className="container">
       <div className="row Kg-row">
-        <div className="col-6">Go To College</div>
+        <div className="col-6">{todoname}</div>
 
-        <div className="col-4">4/10/2026</div>
+        <div className="col-4">{tododate}</div>
 
         <div className="col-2">
           <button type="button" className="btn btn-danger Kg-button">
@@ -16,4 +18,4 @@ function ToDoItem2() {
   );
 }
 
-export default ToDoItem2;
+export default ToDoItem;
