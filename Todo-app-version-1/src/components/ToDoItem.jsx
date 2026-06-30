@@ -1,4 +1,4 @@
-function ToDoItem({todoname,tododate}) {
+function ToDoItem({todoname,tododate,onDeleteClick}) {
  
 
   return (
@@ -9,7 +9,7 @@ function ToDoItem({todoname,tododate}) {
         <div className="col-4">{tododate}</div>
 
         <div className="col-2">
-          <button type="button" className="btn btn-danger Kg-button">
+          <button type="button" className="btn btn-danger Kg-button" onClick={()=>onDeleteClick(todoname)} >
             Delete
           </button>
         </div>
